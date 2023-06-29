@@ -19,9 +19,10 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/scss/mixins' as *;
+@use '../assets/scss/vars' as *;
 
 main {
-    background-color: #1c1c1c;
+    background-color: $background-color-main;
     height: 120px;
 }
 

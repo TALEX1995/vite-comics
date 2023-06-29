@@ -26,15 +26,16 @@
 
 <style lang="scss" scoped>
 @use '../assets/scss/mixins' as *;
+@use '../assets/scss/vars' as *;
 
 footer {
-    background-color: #303030;
+    background-color: $footer-bot-bg-color;
 }
 
 button {
     padding: 10px;
     background-color: transparent;
-    border: 1px solid #0382f9;
+    border: 1px solid $lightblue;
     color: white;
     margin: 15px 0;
     cursor: pointer;
@@ -49,7 +50,7 @@ button {
 }
 
 h2 {
-    color: #0382f9;
+    color: $lightblue;
 }
 
 ul {

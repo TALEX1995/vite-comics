@@ -52,7 +52,9 @@
     </footer>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@use '../assets/scss/vars' as *;
+
 footer {
     padding: 40px 0;
     background-image: url(../assets/img/dc-logo-bg.png), url(../assets/img/footer-bg.jpg);
@@ -67,7 +69,7 @@ h2 {
 }
 
 a {
-    color: #807266;
+    color: $footer-link-color;
 }
 
 ul+h2 {

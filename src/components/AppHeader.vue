@@ -80,6 +80,7 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/scss/mixins' as *;
+@use '../assets/scss/vars' as *;
 
 header {
     height: 120px;
@@ -104,8 +105,8 @@ ul {
         font-weight: bold;
 
         &.active {
-            color: blue;
-            border-bottom: 3px solid blue;
+            color: $lightblue;
+            border-bottom: 3px solid $lightblue;
         }
     }
 }
