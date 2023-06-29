@@ -17,7 +17,9 @@ export default {
     </main>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@use '../assets/scss/mixins' as *;
+
 main {
     background-color: #1c1c1c;
     height: 120px;
@@ -25,12 +27,10 @@ main {
 
 .container {
     height: 100%;
-    display: flex;
-    align-items: center;
+    @include flexbox (start, center);
 }
 
 h1 {
     color: white;
-    vertical-align: center;
 }
 </style>

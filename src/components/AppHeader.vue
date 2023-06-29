@@ -79,17 +79,16 @@ export default {
 
 
 <style lang="scss" scoped>
+@use '../assets/scss/mixins' as *;
+
 header {
     height: 120px;
-    display: flex;
-    justify-content: space-between;
+    @include flexbox (space-between);
 }
 
 div {
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexbox();
 }
 
 img {
@@ -97,7 +96,7 @@ img {
 }
 
 ul {
-    display: flex;
+    @include flexbox;
 
     a {
         color: black;

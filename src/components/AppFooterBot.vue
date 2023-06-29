@@ -25,6 +25,8 @@
 </template>
 
 <style lang="scss" scoped>
+@use '../assets/scss/mixins' as *;
+
 footer {
     background-color: #303030;
 }
@@ -39,9 +41,7 @@ button {
 }
 
 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flexbox (space-between);
 }
 
 .footer-right {
