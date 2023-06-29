@@ -1,4 +1,5 @@
 <script>
+import '@fontsource-variable/open-sans';
 export default {
   data() {
     return {
@@ -8,7 +9,13 @@ export default {
 }
 </script>
 
-<template></template>
+<template>
+  asd
+</template>
 
 
-<style></style>
+<style>
+body {
+  font-family: 'Open Sans Variable', sans-serif;
+}
+</style>
