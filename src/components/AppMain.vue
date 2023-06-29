@@ -17,7 +17,7 @@ export default {
     </main>
 </template>
 
-<style>
+<style scoped>
 main {
     background-color: #1c1c1c;
     height: 120px;
