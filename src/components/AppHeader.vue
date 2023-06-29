@@ -100,7 +100,6 @@ ul {
     display: flex;
 
     a {
-        text-decoration: none;
         color: black;
         padding: 10px;
         font-weight: bold;
