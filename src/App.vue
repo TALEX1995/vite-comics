@@ -2,7 +2,7 @@
 import '@fontsource-variable/open-sans';
 import AppHeader from './components/AppHeader.vue'
 import AppMain from './components/AppMain.vue'
-import AppFooter from './components/AppFooter.vue'
+import AppFooterTop from './components/AppFooterTop.vue'
 export default {
   data() {
     return {
@@ -13,7 +13,7 @@ export default {
   components: {
     AppHeader,
     AppMain,
-    AppFooter
+    AppFooterTop
   }
 }
 </script>
@@ -21,7 +21,7 @@ export default {
 <template>
   <AppHeader />
   <AppMain />
-  <AppFooter />
+  <AppFooterTop />
 </template>
 
 
