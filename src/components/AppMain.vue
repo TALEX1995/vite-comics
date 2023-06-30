@@ -28,15 +28,11 @@ main {
 }
 
 .container {
-    @include flexbox (start, center);
+    @include flexbox (center, baseline);
     flex-wrap: wrap;
 }
 
 h1 {
     color: white;
-}
-
-.card {
-    flex-basis: calc(100% / 6);
 }
 </style>

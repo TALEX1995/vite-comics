@@ -107,7 +107,7 @@ export default {
 
 <template>
   <AppHeader />
-  <AppMain :dcSeries="dcSeries" />
+  <AppMain :dc-series="dcSeries" />
   <AppFooterTop />
   <AppFooterBot />
 </template>
