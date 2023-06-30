@@ -1,10 +1,12 @@
 <script>
+import ComicCard from './ComicCard.vue'
 export default {
-    data() {
-        return {
+    props: {
 
-        }
     },
+    components: {
+        ComicCard,
+    }
 
 }
 </script>
@@ -12,7 +14,7 @@ export default {
 <template>
     <main>
         <div class="container">
-            <h1>Content Goes Here </h1>
+            <ComicCard />
         </div>
     </main>
 </template>
@@ -23,15 +25,18 @@ export default {
 
 main {
     background-color: $background-color-main;
-    height: 120px;
 }
 
 .container {
-    height: 100%;
     @include flexbox (start, center);
+    flex-wrap: wrap;
 }
 
 h1 {
     color: white;
+}
+
+.card {
+    flex-basis: calc(100% / 6);
 }
 </style>
