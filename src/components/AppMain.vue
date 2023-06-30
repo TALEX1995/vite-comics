@@ -13,6 +13,10 @@ export default {
 
 <template>
     <main>
+        <div class="jumbo">
+            <img class="dc-hero" src="https://fumettologica.it/wp-content/uploads/2021/03/infinite-frontier-dc.jpg"
+                alt="Hero">
+        </div>
         <div class="container">
             <div class="current-series">Current Series</div>
         </div>
@@ -41,6 +45,10 @@ h1 {
     color: white;
 }
 
+.dc-hero {
+    width: 100%;
+}
+
 button {
     padding: 10px 60px;
     background-color: $lightblue;
@@ -57,5 +65,10 @@ button {
     line-height: 40px;
     position: absolute;
     margin-top: -20px;
+}
+
+.jumbo {
+    height: 300px;
+    overflow: hidden;
 }
 </style>
