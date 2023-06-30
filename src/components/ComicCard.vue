@@ -1,9 +1,15 @@
 <script>
-
+export default {
+    props: {
+        dcSeries: Array,
+    }
+}
 </script>
 
 <template>
-    <div class="card"></div>
+    <div class="card">
+
+    </div>
 </template>
 
 <style lang="scss" scoped>

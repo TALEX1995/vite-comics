@@ -2,7 +2,7 @@
 import ComicCard from './ComicCard.vue'
 export default {
     props: {
-
+        dcSeries: Array
     },
     components: {
         ComicCard,
@@ -14,7 +14,7 @@ export default {
 <template>
     <main>
         <div class="container">
-            <ComicCard />
+            <ComicCard :dcSeries="dcSeries" />
         </div>
     </main>
 </template>
