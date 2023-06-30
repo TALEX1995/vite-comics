@@ -14,7 +14,11 @@ export default {
 <template>
     <main>
         <div class="container">
+            <div class="current-series">Current Series</div>
+        </div>
+        <div class="container card-container">
             <ComicCard :dcSeries="dcSeries" />
+            <button>Load More</button>
         </div>
     </main>
 </template>
@@ -25,14 +29,33 @@ export default {
 
 main {
     background-color: $background-color-main;
+    position: relative
 }
 
-.container {
+.card-container {
     @include flexbox (center, baseline);
     flex-wrap: wrap;
 }
 
 h1 {
     color: white;
+}
+
+button {
+    padding: 10px 60px;
+    background-color: $lightblue;
+    color: white;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.current-series {
+    background-color: $lightblue;
+    color: white;
+    width: 150px;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    margin-top: -20px;
 }
 </style>

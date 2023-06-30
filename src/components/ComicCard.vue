@@ -16,6 +16,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../assets/scss/vars' as *;
+
 .card {
     flex-basis: calc(100% / 6);
     margin: 30px 0;
@@ -32,7 +34,6 @@ img {
     object-fit: cover;
 }
 
-img:first-child {}
 
 h3 {
     color: white;
